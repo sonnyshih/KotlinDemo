@@ -1,5 +1,7 @@
 package com.sonny.demo;
 
+import com.sonny.demo.basic.classes.Person;
+import com.sonny.demo.basic.classes.Employee;
 
 fun main(args: Array<String>) {
 	val x: Int = 3;  // 使用val宣告不可改變的變數
@@ -44,6 +46,32 @@ fun main(args: Array<String>) {
 	// 使用 for
 	forDemo();
 	println("");
+
+	
+	/* ###### 使用Person Class (Start) ##### */
+	val simon: Person = Person("Simon");
+	
+	// 呼叫函式，顯示： Hello, Simon!
+    simon.sayGreeting()
+	
+    // 設定屬性值
+    simon.gender = 'M';
+    // 使用屬性值，顯示： Simon(Male)
+    println(simon.information);
+
+    /* ###### 使用Person Class (End) ##### */
+ 
+    println();
+	
+	/* ###### 使用Employee Class (繼承Person class) (Start) ##### */
+	var john : Employee = Employee("John", 'M', 25000.0);
+    // 呼叫函式
+    john.printInformation()
+    // 執行後顯示：
+    //      Name: Simon
+    //      Gender: M
+    //      Salary: 25000.0
+	/* ###### 使用Employee Class (繼承Person class) (End) ##### */
 
 
 }
