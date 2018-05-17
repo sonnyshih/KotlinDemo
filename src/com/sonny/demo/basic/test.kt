@@ -4,26 +4,26 @@ import com.sonny.demo.basic.classes.Person;
 import com.sonny.demo.basic.classes.Employee;
 
 fun main(args: Array<String>) {
-	val x: Int = 3;  // ¨Ï¥Îval«Å§i¤£¥i§ïÅÜªºÅÜ¼Æ
-	val y = 5;       // ¨Ï¥Î³]©w­È±À½×ÅÜ¼Æ«¬ºA
+	val x: Int = 3;  // ä½¿ç”¨valå®£å‘Šä¸å¯æ”¹è®Šçš„è®Šæ•¸
+	val y = 5;       // ä½¿ç”¨è¨­å®šå€¼æ¨è«–è®Šæ•¸å‹æ…‹
 
-	val z: Int;      // ¨S¦³³]©w­ÈªºÅÜ¼Æ´N¤@©w­n«ü©w«¬ºA
-	z = 7;           // ³]©w­È¥H«á´N¤£¥i¥H§ïÅÜ
+	val z: Int;      // æ²’æœ‰è¨­å®šå€¼çš„è®Šæ•¸å°±ä¸€å®šè¦æŒ‡å®šå‹æ…‹
+	z = 7;           // è¨­å®šå€¼ä»¥å¾Œå°±ä¸å¯ä»¥æ”¹è®Š
 
-	println("/* ##### ¤£¥i§ïÅÜÅÜ¼Æ Start ##### */");
+	println("/* ##### ä¸å¯æ”¹è®Šè®Šæ•¸ Start ##### */");
 	println("X: " + x);
 	println("Y: " + y);
 	println("Z: " + z);
-	println("/* ##### ¤£¥i§ïÅÜÅÜ¼Æ End ##### */");
+	println("/* ##### ä¸å¯æ”¹è®Šè®Šæ•¸ End ##### */");
 
 	println();
 
-	var v: Int = 3;          // ¨Ï¥Îvar«Å§i¥i¥H§ïÅÜªºÅÜ¼Æ
-	v = 13;              // ¤£·|µo¥Í¿ù»~
+	var v: Int = 3;          // ä½¿ç”¨varå®£å‘Šå¯ä»¥æ”¹è®Šçš„è®Šæ•¸
+	v = 13;              // ä¸æœƒç™¼ç”ŸéŒ¯èª¤
 
-	println("/* ##### ¥i§ïÅÜÅÜ¼Æ Start ##### */");
+	println("/* ##### å¯æ”¹è®Šè®Šæ•¸ Start ##### */");
 	println("V: " + v);
-	println("/* ##### ¥i§ïÅÜÅÜ¼Æ End ##### */");
+	println("/* ##### å¯æ”¹è®Šè®Šæ•¸ End ##### */");
 
 	var greetString = getGreetString("Hello", "Simon");
 	println(greetString);
@@ -32,47 +32,55 @@ fun main(args: Array<String>) {
 	
 	println("");
 	
-	// ¨Ï¥Îwhen (¦pJavaªºSwith)
+	// ä½¿ç”¨when (å¦‚Javaçš„Swith)
 	whenDemo();
 	println("");
 	
-	// ¨Ï¥ÎWhile
+	// ä½¿ç”¨While
 	WhileDemo();
 	println("");
 	
-	// ¨Ï¥Î do while 
+	// ä½¿ç”¨ do while 
 	doWhileDemo();
 	
-	// ¨Ï¥Î for
+	// ä½¿ç”¨ for
 	forDemo();
 	println("");
 
 	
-	/* ###### ¨Ï¥ÎPerson Class (Start) ##### */
+	/* ###### ä½¿ç”¨Person Class (Start) ##### */
 	val simon: Person = Person("Simon");
 	
-	// ©I¥s¨ç¦¡¡AÅã¥Ü¡G Hello, Simon!
+	// å‘¼å«å‡½å¼ï¼Œé¡¯ç¤ºï¼š Hello, Simon!
     simon.sayGreeting()
 	
-    // ³]©wÄİ©Ê­È
+    // è¨­å®šå±¬æ€§å€¼
     simon.gender = 'M';
-    // ¨Ï¥ÎÄİ©Ê­È¡AÅã¥Ü¡G Simon(Male)
+    // ä½¿ç”¨å±¬æ€§å€¼ï¼Œé¡¯ç¤ºï¼š Simon(Male)
     println(simon.information);
 
-    /* ###### ¨Ï¥ÎPerson Class (End) ##### */
+    /* ###### ä½¿ç”¨Person Class (End) ##### */
  
     println();
 	
-	/* ###### ¨Ï¥ÎEmployee Class (Ä~©ÓPerson class) (Start) ##### */
+	/* ###### ä½¿ç”¨Employee Class (ç¹¼æ‰¿Person class) (Start) ##### */
 	var john : Employee = Employee("John", 'M', 25000.0);
-    // ©I¥s¨ç¦¡
+    // å‘¼å«å‡½å¼
     john.printInformation()
-    // °õ¦æ«áÅã¥Ü¡G
+    // åŸ·è¡Œå¾Œé¡¯ç¤ºï¼š
     //      Name: Simon
     //      Gender: M
     //      Salary: 25000.0
-	/* ###### ¨Ï¥ÎEmployee Class (Ä~©ÓPerson class) (End) ##### */
+	/* ###### ä½¿ç”¨Employee Class (ç¹¼æ‰¿Person class) (End) ##### */
 
+	var memberList: ArrayList<String> = ArrayList<String>();
+
+	memberList.add("hello");
+	memberList.add("good");
+
+	for (member in memberList){
+		println(member);
+	}
 
 }
 
@@ -100,7 +108,7 @@ fun whenDemo(){
         else    -> bonus = 50
     }
  
-    // Åã¥Ü¡G Bonus: 3000
+    // é¡¯ç¤ºï¼š Bonus: 3000
     println("Bonus: $bonus")
  
     val bonus2 =
@@ -111,10 +119,13 @@ fun whenDemo(){
                 else    -> 50
             }
  
-    // Åã¥Ü¡G Bonus: 3000
+    // é¡¯ç¤ºï¼š Bonus: 3000
     println("Bonus2: $bonus2");
 	
 	println("##### when Demo (End) #####");
+
+
+
 
 }
 
@@ -143,7 +154,7 @@ fun doWhileDemo(){
         print(index)
         index++
     } while (index < 10)
-    // °õ¦æµ{¦¡«áÅã¥Ü¡G 0123456789
+    // åŸ·è¡Œç¨‹å¼å¾Œé¡¯ç¤ºï¼š 0123456789
 
 	println("");
 	println("##### do while Demo (End) #####");
@@ -152,7 +163,7 @@ fun doWhileDemo(){
 fun forDemo(){
 	
 	println("##### for Demo 1 (Start) #####");
-	// Åã¥Ü¡G 12345
+	// é¡¯ç¤ºï¼š 12345
     for (index: Int in 1..5) {
         print(index)
     }
@@ -162,7 +173,7 @@ fun forDemo(){
 	println();
 	
 	println("##### for Demo 2 (Start) #####");
-    // Åã¥Ü¡G 135
+    // é¡¯ç¤ºï¼š 135
     for (index: Int in 1..5 step 2) {
         print(index)
 	}
@@ -172,7 +183,7 @@ fun forDemo(){
  	println();
 	
 	println("##### for Demo 3 (Start) #####");
-    // Åã¥Ü¡G 54321
+    // é¡¯ç¤ºï¼š 54321
     for (index: Int in 5 downTo 1) {
         print(index);
 	}

@@ -1,28 +1,28 @@
 package com.sonny.demo.basic.classes
 
-/* ##### open ¥Nªí¥i¥H³QÄ~©Óªºclass ##### */
-// (var name: String)¬O¤@­Ó¦r¦ê°Ñ¼Æªº¥D­n«Øºc¦¡¡]primary constructor¡^
+/* ##### open ä»£è¡¨å¯ä»¥è¢«ç¹¼æ‰¿çš„class ##### */
+// (var name: String)æ˜¯ä¸€å€‹å­—ä¸²åƒæ•¸çš„ä¸»è¦å»ºæ§‹å¼ï¼ˆprimary constructorï¼‰
 open class Person (var name: String) {
 	
-	// ¤@­Ó¥i¥H§ïÅÜ­ÈªºÄİ©Ê¡]property¡^
+	// ä¸€å€‹å¯ä»¥æ”¹è®Šå€¼çš„å±¬æ€§ï¼ˆpropertyï¼‰
 	var gender: Char = 'U';
 	
 	val information: String
-        // ¬°information¥[¤Jgetter¤èªk
+        // ç‚ºinformationåŠ å…¥getteræ–¹æ³•
         get() = "$name(${if (gender=='M') "Male" else "Female"})";
 	
-	 // ¨ä¥¦«Øºc¦¡¡A¨Ï¥Îthis(name)©I¥s¥D­n«Øºc¦¡
+	 // å…¶å®ƒå»ºæ§‹å¼ï¼Œä½¿ç”¨this(name)å‘¼å«ä¸»è¦å»ºæ§‹å¼
     constructor(name: String, gender: Char) : this(name) {
-        // ³]©wÄİ©Ê
+        // è¨­å®šå±¬æ€§
         this.gender = gender
     }
  
-    // ¨ç¦¡
+    // å‡½å¼
     fun sayGreeting() {
         println("Hello, $name!")
     }
  
-    // ¨ç¦¡¡A¨Ï¥ÎopenÅı¤lÃş§O¥i¥HÂĞ¼g³o­Ó¤èªk
+    // å‡½å¼ï¼Œä½¿ç”¨openè®“å­é¡åˆ¥å¯ä»¥è¦†å¯«é€™å€‹æ–¹æ³•
     open fun printInformation() {
         println("Name: $name")
         println("Gender: $gender")

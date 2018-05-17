@@ -4,21 +4,21 @@ import com.sonny.demo.basic.classes.Person;
 
 class Employee(name: String): Person(name) {
 	
-    // ¤@­Ó¥i¥H§ïÅÜ­ÈªºÄİ©Ê¡]property¡^
+    // ä¸€å€‹å¯ä»¥æ”¹è®Šå€¼çš„å±¬æ€§ï¼ˆpropertyï¼‰
     var salary: Double = 0.0
 
-	// ¨ä¥¦«Øºc¦¡¡A¨Ï¥Îthis(name)©I¥s¥D­n«Øºc¦¡
+	// å…¶å®ƒå»ºæ§‹å¼ï¼Œä½¿ç”¨this(name)å‘¼å«ä¸»è¦å»ºæ§‹å¼
     constructor(name: String, gender: Char, salary: Double): this(name) {
-        // ³]©wÄ~©Ó¦Û¤÷Ãş§OªºÄİ©Ê­È
+        // è¨­å®šç¹¼æ‰¿è‡ªçˆ¶é¡åˆ¥çš„å±¬æ€§å€¼
         super.gender = gender
     
-		// ³]©wÄİ©Ê­È
+		// è¨­å®šå±¬æ€§å€¼
         this.salary = salary
     }
  
-    // ÂĞ¼gÄ~©Ó¦Û¤÷Ãş§Oªº¨ç¦¡
+    // è¦†å¯«ç¹¼æ‰¿è‡ªçˆ¶é¡åˆ¥çš„å‡½å¼
     override fun printInformation() {
-        // ©I¥s¤÷Ãş§Oªº¨ç¦¡
+        // å‘¼å«çˆ¶é¡åˆ¥çš„å‡½å¼
         super.printInformation()
         println("Salary: $salary")
     }	
