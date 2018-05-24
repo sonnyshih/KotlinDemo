@@ -57,6 +57,7 @@ fun produceBlackCoffee() {
     var machine = BlackCoffeeMachine(bag)
     machine.startMachine()
 
+    showMenu()
 }
 
 fun produceLatteCoffee() {
@@ -65,6 +66,7 @@ fun produceLatteCoffee() {
     var machine = LatteCoffeeMachine(bag)
     machine.startMachine()
 
+    showMenu()
 }
 
 fun produceCaramelMacchiatoCoffee() {
@@ -74,4 +76,5 @@ fun produceCaramelMacchiatoCoffee() {
     var machine = CaramelMacchiatoCoffeeMachine(bag)
     machine.startMachine()
 
+    showMenu()
 }

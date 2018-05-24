@@ -20,12 +20,17 @@ class LatteCoffeeMachine(bag: LatteCoffeePackage): Machine<LatteCoffeePackage>(b
     }
 
     override fun startCookCoffee() {
+
         println("take out " + bag.getCoffee().getCoffeeName())
+        Thread.sleep(1000)
         grindBehavior.grindBean(bag.getCoffee())
 
         println()
 
+        Thread.sleep(1000)
         println("Take out " + bag.getMilk().getMilkName())
+
+        Thread.sleep(1000)
         milkBehavior.handleMilk(bag.getMilk())
 
     }

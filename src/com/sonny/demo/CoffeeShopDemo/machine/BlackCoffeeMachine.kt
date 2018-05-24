@@ -23,11 +23,15 @@ class BlackCoffeeMachine(bag: BlackCoffeePackage) : Machine<BlackCoffeePackage>(
 
     override fun startCookCoffee() {
         println("take out " + bag.getCoffee().getCoffeeName())
+        Thread.sleep(1000)
         grindBehavior.grindBean(bag.getCoffee())
 
         println()
 
+        Thread.sleep(1000)
         println("Take out " + bag.getSugar().getSugarName())
+
+        Thread.sleep(1000)
         sugarBehavior.addSugar(bag.getSugar())
     }
 
